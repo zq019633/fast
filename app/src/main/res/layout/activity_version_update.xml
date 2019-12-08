@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.android.fitz.fastreading.ui.activity.VersionUpdateActivity">
+    <ImageButton
+        android:id="@+id/down"
+        style="@style/imgbtn"
+        android:src="@drawable/ic_start_download"/>
+    <ImageButton
+        android:id="@+id/cover"
+        style="@style/imgbtn"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_force_cover"/>
+    <ImageButton
+        android:id="@+id/back"
+        style="@style/imgbtn"
+        android:src="@drawable/ic_action_home"/>
+</LinearLayout>

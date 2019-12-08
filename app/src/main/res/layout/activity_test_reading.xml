@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.fitz.fastreading.ui.activity.Test.TestReadingActivity"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/text_finish"
+        android:layout_width="89dp"
+        android:layout_height="41dp"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:background="@drawable/ic_action_start"
+        android:layout_marginLeft="41dp"/>
+
+    <TextView
+        android:id="@+id/text_time"
+        android:layout_width="88dp"
+        android:layout_height="41dp"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@id/text_finish"
+        android:text="00:00:00"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:background="@drawable/ic_action_time_table"/>
+
+    <ImageView
+        android:id="@+id/image_back"
+        android:layout_width="82dp"
+        android:layout_height="41dp"
+        android:src="@drawable/ic_action_quit"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/text_finish"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="6dp">
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:src="@drawable/ic_book_bg"-->
+            <!--android:scaleType="fitXY"/>-->
+        <FrameLayout
+            android:id="@+id/fr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</RelativeLayout>

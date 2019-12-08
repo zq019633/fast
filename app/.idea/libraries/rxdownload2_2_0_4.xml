@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="rxdownload2-2.0.4">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/521fa74b5fdd179dca8bcf1121a42e951cf2904d/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/521fa74b5fdd179dca8bcf1121a42e951cf2904d/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/zlc.season/rxdownload2/2.0.4/b941d45b949fd259f2ca3762b890a985233afec4/rxdownload2-2.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

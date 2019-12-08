@@ -1,0 +1,1 @@
+F:\java\outProject\FastReading\app\build\outputs\mapping\release\app-mapping.txt --> c5d9eacffc3b4d33c3bf868a954ee2de62b5ff02

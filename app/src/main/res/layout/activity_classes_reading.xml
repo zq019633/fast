@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.fitz.fastreading.ui.activity.classes.ClassesReadingActivity"
+    android:padding="7dp">
+    
+    <LinearLayout
+        android:id="@+id/linearlayout_content"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="34dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="31dp"
+            android:paddingBottom="30dp">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/dp_blue"
+                android:layout_marginLeft="52dp"/>
+            <TextView
+                android:id="@+id/text_words"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/dp_blue"/>
+            <TextView
+                android:id="@+id/text_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/dp_blue"/>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearlayout_line"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal" />
+            <RelativeLayout
+                android:id="@+id/relativelayout_canvas"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/canvas">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_classes_canvas"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:scaleType="fitXY"/>
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="210dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!--<TextView-->
+            <!--android:id="@+id/text_start"-->
+            <!--android:text="开 始 阅 读"-->
+            <!--style="@style/classes_btn"/>-->
+        <ImageView
+            android:id="@+id/image_start"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_classes_reading"/>
+
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_classes_time"/>
+            <TextView
+                android:id="@+id/text_total_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="00:00:00"/>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/image_speed_setting"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_classes_speed"/>
+
+        <ImageView
+            android:id="@+id/image_other_setting"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_classes_other"/>
+
+        <ImageView
+            android:id="@+id/image_back"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_classes_home"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/text_speed_setting"-->
+            <!--style="@style/classes_btn"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="阅 读 速 度" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/text_other_setting"-->
+            <!--style="@style/classes_btn"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="其 他 设 置" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/text_back"-->
+            <!--style="@style/classes_btn"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:text="返 回 目 录" />-->
+    </LinearLayout>
+</LinearLayout>

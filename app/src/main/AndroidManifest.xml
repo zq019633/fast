@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.fitz.fastreading">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 拨打电话的权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+
+    <application
+        android:name=".base.AppApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppBgTheme">
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppBgTheme" />
+        <activity
+            android:name=".ui.activity.VersionUpdateActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppBgTheme" />
+        <activity
+            android:name=".ui.activity.classes.ClassesMainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppBgTheme" />
+        <activity
+            android:name=".ui.activity.train.ExtendTrainMainActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.activity.train.game1.ExtendTrainGameResultActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppBgTheme" />
+        <activity
+            android:name=".ui.activity.Test.ReadTestMainActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppBgTheme" />
+
+        <service android:name=".service.UpdateService" />
+
+        <activity
+            android:name=".ui.activity.classes.ClassesReadingActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.activity.train.game1.ExtendTrainMoveGame3Activity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppBgTheme" />
+        <activity
+            android:name=".ui.activity.train.game1.ExtendTrainAnswerResultActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppBgTheme" />
+        <activity
+            android:name=".ui.activity.train.game1.ExtendTrainAnswerPreviewActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppBgTheme" />
+        <activity
+            android:name=".ui.activity.Test.QuestionActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.activity.train.ReadyGoActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.activity.train.game2.FollowMeActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.activity.train.game2.FollowMeEndActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.activity.train.game3.ExtendImageGameActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.activity.train.game2.LookForCompatriotActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.activity.train.game3.WordGameActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.activity.train.game2.LookForCompatriotEndActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.activity.train.game3.EnglishWordActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.activity.Test.TestReading2Activity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".ui.activity.Test.TestReadingActivity"
+            android:screenOrientation="landscape"/>
+
+        <!-- bugly -->
+        <activity
+            android:name="com.tencent.bugly.beta.ui.BetaActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|locale"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.android.fitz.fastreading.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+
+</manifest>

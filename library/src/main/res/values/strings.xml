@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2015 [1076559197@qq.com | tchen0707@gmail.com]
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License”);
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+
+    <string name="app_name">library</string>
+    <string name="common_loading_message">Loading...</string>
+    <string name="common_empty_msg">暂无数据</string>
+    <string name="common_error_msg">哎呀，网络连接出了问题</string>
+    <string name="loading_default_text">加载中...</string>
+    <string name="loading_login_text">登录中...</string>
+    <string name="common_click_to_refresh">点击刷新</string>
+    <string name="common_click_to_retry">点击重试</string>
+    <string name="common_no_network">网络连接失败</string>
+    <string name="common_no_network_msg">Oops,网络断开，请稍后重试</string>
+    <string name="common_error_service">网络连接异常，请检查网络</string>
+    <string name="common_error_service_noresponse">服务器无响应,请稍后重试</string>
+
+    <string name="prompt">提示</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="refuse">拒绝</string>
+    <string name="goset">去设置</string>
+    <string name="pleaseinput">请输入%s</string>
+    <string name="pleaseselect">请选择%s</string>
+    <string name="gender">性别</string>
+    <string name="complete">完成</string>
+    <string name="message">消息</string>
+    <string name="permisss_title">请允许获取%s</string>
+    <string name="permisss_content">%1$s权限被关闭,请开启权限后重试\n\n设置路径:系统设置->%2$s->权限</string>
+    <string name="permisss_content2">由于%1$s无法获取%2$s, %3$s的权限,不能正常运行,请开启权限后重试\n\n设置路径:系统设置->%4$s->权限</string>
+    <string name="permisss_content3">我们需要%1$s, %2$s的权限,否则您将无法正常使用%3$s</string>
+    <string name="permiss_auth">我们需要获得以下权限\n才能为你提供服务</string>
+    <string name="permisss_phone">打电话</string>
+    <string name="permiss_storge">存储空间</string>
+    <string name="permiss_device">设备信息</string>
+</resources>

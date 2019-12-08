@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">快速阅读</string>
+    <string name="menuitem1">横向\"之\"字型运动</string>
+    <string name="menuitem2">纵向\"之\"字型运动</string>
+    <string name="menuitem4">纵向\"8\"字型运动</string>
+
+
+</resources>

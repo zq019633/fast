@@ -1,0 +1,103 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/alpha_45_white</item>
+        <item name="colorAccent">@color/deep_blue</item>
+
+        <item name="android:windowBackground">@color/white</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="actionMenuTextColor">@color/white</item>
+    </style>
+
+    <style name="AppStart" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@drawable/ic_action_bg</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppBgTheme" parent="@style/AppTheme">
+        <item name="android:windowBackground">@drawable/ic_action_bg</item>
+    </style>
+
+    <style name="toolbar_theme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+    <style name="recycler_driver_parent">
+        <item name="isdivider">true</item>
+        <item name="divider_mrginleft">0dp</item>
+        <item name="divider_mrginright">0dp</item>
+    </style>
+
+    <style name="recycler_driver_transparent" parent="recycler_driver_parent">
+        <item name="divider_height">5dp</item>\
+        <item name="divider_background">@color/transparent</item>
+    </style>
+
+    <style name="textstle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+    </style>
+
+    <style name="editstle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+        <item name="android:textColorHint">@color/alpha_10_black</item>
+        <item name="android:background">@color/transparent</item>
+    </style>
+
+    <style name="extend_train_menu_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/color_333333</item>
+        <item name="android:background">#A4DEDF</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+
+    <style name="imgbtn">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="deepBluebg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">50dp</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:background">@drawable/deep_blue_square_bg</item>
+    </style>
+
+    <style name="classes_btn">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/ic_classes_time</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="horizontal_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">@color/red</item>
+    </style>
+
+    <style name="vercial_line">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/red</item>
+    </style>
+</resources>
